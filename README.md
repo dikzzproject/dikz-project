@@ -1,6 +1,6 @@
 # DikzProject | Website Portofolio
 
-Website portofolio pribadi milik **Mahardika Syafa Rizki**, web developer sekaligus engineer bot WhatsApp. Dibuat dengan HTML, CSS, dan JavaScript dasar (tanpa framework dan tanpa proses build), dengan tampilan minimalis, modern, dan responsif.
+Website portofolio pribadi milik **Dikz Project**, web developer sekaligus engineer bot WhatsApp. Dibuat dengan HTML, CSS, dan JavaScript dasar (tanpa framework dan tanpa proses build), dengan tampilan minimalis, modern, dan responsif.
 
 ## Fitur
 
