@@ -38,7 +38,7 @@ dikz-portofolio/
 
 1. Unduh atau clone repositori ini:
    ```bash
-   git clone https://github.com/dikzzproject/NAMA-REPOSITORI.git
+   git clone https://github.com/dikzzproject/dikz-project.git
    cd NAMA-REPOSITORI
    ```
 2. Buka `index.html` langsung di browser, atau jalankan server lokal:
