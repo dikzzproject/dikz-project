@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Portofolio | Web Developer &amp; WhatsApp Bot Engineer</title>
+  <meta name="description" content="Portofolio web developer dan engineer bot WhatsApp.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#beranda" class="navbar__logo">Dikz<span>Project</span></a>
+
+      <nav class="navbar__menu" id="menu" aria-label="Navigasi utama">
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#kemampuan">Kemampuan</a>
+        <a href="#demo">Demo Bot</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Ganti tema">🌓</button>
+        <button class="icon-btn navbar__toggle" id="menuToggle" aria-label="Buka menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="beranda">
+      <div class="container">
+        <span class="hero__badge reveal"><i class="hero__dot"></i> Tersedia untuk proyek baru</span>
+        <div class="hero__heading reveal">
+          <div class="hero__text">
+            <p class="hero__eyebrow">Halo, saya</p>
+            <h1 class="hero__title">Mahardika Syafa Rizki</h1>
+            <p class="hero__typing" id="typing" aria-live="polite"></p>
+          </div>
+          <img class="hero__logo" src="logo.png" alt="Logo DikzProject">
+        </div>
+        <p class="hero__desc reveal">
+          Web developer sekaligus engineer bot WhatsApp. Saya membuat antarmuka yang bersih
+          dan sistem otomatisasi yang andal, mulai dari landing page sampai chatbot untuk bisnis.
+        </p>
+        <div class="hero__cta reveal">
+          <a href="#kemampuan" class="btn btn--primary">Lihat Kemampuan →</a>
+          <a href="#kontak" class="btn">Hubungi Saya</a>
+        </div>
+
+        <div class="stats reveal">
+          <div><div class="stats__num" data-count="40">0</div><div class="stats__label">Proyek selesai</div></div>
+          <div><div class="stats__num" data-count="25">0</div><div class="stats__label">Bot dirilis</div></div>
+          <div><div class="stats__num" data-count="5">0</div><div class="stats__label">Tahun pengalaman</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TENTANG & KEAHLIAN ============ -->
+    <section class="section" id="tentang">
+      <div class="container">
+        <p class="section__label reveal">01 / Tentang</p>
+        <h2 class="section__title reveal">Sedikit tentang saya</h2>
+
+        <div class="about">
+          <div class="reveal">
+            <p>Saya adalah web developer yang fokus pada kode yang rapi, cepat, dan mudah dirawat. Saya percaya desain yang baik adalah desain yang tidak mengganggu.</p>
+            <p>Di sisi lain, saya mengembangkan bot WhatsApp untuk otomatisasi layanan pelanggan, notifikasi, pemesanan, dan integrasi dengan sistem yang sudah ada.</p>
+          </div>
+          <div class="skills reveal" id="skills"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KEMAMPUAN ============ -->
+    <section class="section" id="kemampuan">
+      <div class="container">
+        <p class="section__label reveal">02 / Kemampuan</p>
+        <h2 class="section__title reveal">Kemampuan saya</h2>
+        <div class="abilities" id="abilities"></div>
+      </div>
+    </section>
+
+    <!-- ============ DEMO BOT ============ -->
+    <section class="section" id="demo">
+      <div class="container">
+        <p class="section__label reveal">03 / Demo</p>
+        <h2 class="section__title reveal">Coba bot WhatsApp saya</h2>
+
+        <div class="demo">
+          <div class="demo__info reveal">
+            <p>Ini simulasi sederhana cara kerja bot berbasis perintah. Ketik salah satu perintah atau tekan tombol cepat di bawah chat.</p>
+            <div class="demo__commands">
+              <code>menu</code><code>harga</code><code>status</code><code>bantuan</code>
+            </div>
+          </div>
+
+          <div class="chat reveal">
+            <div class="chat__header">
+              <div class="chat__avatar">🤖</div>
+              <div><div class="chat__name">Bot Demo</div><div class="chat__status">● online</div></div>
+            </div>
+            <div class="chat__body" id="chatBody"></div>
+            <div class="chat__quick" id="chatQuick"></div>
+            <form class="chat__form" id="chatForm" autocomplete="off">
+              <input type="text" id="chatInput" placeholder="Ketik pesan..." aria-label="Pesan">
+              <button class="btn btn--primary" type="submit">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ KONTAK ============ -->
+    <section class="section" id="kontak">
+      <div class="container">
+        <p class="section__label reveal">04 / Kontak</p>
+        <h2 class="section__title reveal">Kontak Saya</h2>
+
+        <div class="contact">
+          <div class="contact__info reveal">
+            <p>Punya ide website atau bot? Kirim pesan, saya akan membalas secepatnya lewat WhatsApp.</p>
+            <div class="contact__links">
+              <a class="btn" href="#" id="waLink" target="_blank" rel="noopener">💬 Chat via WhatsApp</a>
+              <a class="btn" href="#" id="githubLink" target="_blank" rel="noopener">🐙 GitHub</a>
+            </div>
+          </div>
+
+          <form class="form reveal" id="contactForm" novalidate>
+            <label>Nama <input type="text" name="name" required placeholder="Nama Anda"></label>
+            <label>Pesan <textarea name="message" rows="4" required placeholder="Ceritakan kebutuhan Anda..."></textarea></label>
+            <button class="btn btn--primary" type="submit">Kirim ke WhatsApp →</button>
+            <p class="form__note" id="formNote" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img class="footer__logo" src="logo.png" alt="Logo DikzProject">
+        <span>© <span id="year"></span> DikzProject. Dibuat dengan HTML, CSS &amp; JavaScript.</span>
+      </div>
+      <a href="#beranda">Kembali ke atas ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
